@@ -3,32 +3,32 @@ Role Name
 [![license][2i]][2p]
 [![twitter][3i]][3p]
 
-A brief description of the role goes here.
+Change properties of sshd in client.
 
 Description
 -----------
 
-Give a description
+The sshd role reconfigures the server install of a the provisioning client. You only need to change the values for the properties you wish to change on `vars/main.yml`.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The variables you need to change are in `vars/main.yml`. You should use the listed vars to figure what you want to change. The names are self explanatory.
 
 Requirements
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Needs **ssh** server installed. If you using ansible, can't see how you don't have it...
 
 Usage
 -----
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Only need to add **sshd** role to your playbook and you are good to go. *DO NOTE*, when you run the role, it WILL change the access to the provisioning client. As such, you should run this role either as the last role on your playbook.
 
 ``` yaml
 - hosts: servers
     roles:
-        - { role: username.rolename, x: 42 }
+        - sshd
 ```
 
 Author Information
