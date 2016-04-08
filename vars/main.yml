@@ -1,2 +1,8 @@
 ---
-# vars file for template
+sshd:
+  port: 22
+  groups: ssh
+  pubkey: yes
+  rsa:  yes
+  passwd: no
+  empty: no
