@@ -15,6 +15,18 @@ Role Variables
 
 The variables you need to change are in `vars/main.yml`. You should use the listed vars to figure what you want to change. The names are self explanatory.
 
+``` yaml
+sshd:
+  port: 22
+  groups: ssh
+  pubkey: yes
+  rsa:  yes
+  passwd: no
+  empty: no
+
+```
+
+
 Requirements
 ------------
 
