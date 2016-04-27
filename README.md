@@ -8,12 +8,12 @@ Change properties of sshd in client.
 Description
 -----------
 
-The sshd role reconfigures the server install of a the provisioning client. You only need to change the values for the properties you wish to change on `vars/main.yml`.
+The sshd role reconfigures the server install of a the provisioning client. You only need to change the values for the properties you wish to change on `defaults/main.yml`.
 
 Role Variables
 --------------
 
-The variables you need to change are in `vars/main.yml`. You should use the listed vars to figure what you want to change. The names are self explanatory.
+The variables you need to change are in `defaults/main.yml`. You should use the listed defaults to figure what you want to change. The names are self explanatory.
 
 ``` yaml
 sshd:
