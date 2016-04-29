@@ -1,8 +1,8 @@
 ---
 sshd:
   port: 22
-  groups: ssh
-  pubkey: yes
-  rsa:  yes
-  passwd: no
-  empty: no
+  groups: "ssh"
+  pubkey: "yes"
+  rsa:  "yes"
+  passwd: "no"
+  empty: "no"
